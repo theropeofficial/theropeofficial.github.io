@@ -13,56 +13,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">    
     <link rel="icon" href="assets/images/The Rope - Nightbird Cover Art Hands.png" type="image/icon type">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+    .navbar-nav .nav-link {
+      color: red !important;
+      font-size: 2em;
+      margin: 0rem 3rem 0rem 3rem;
+    }
+    .navbar-brand img {
+      height: 100px; /* Adjust based on your requirements */
+      max-width: 100%;
+      width: auto;
+    }
+    .navbar-toggler {
+      border-color: transparent;
+    }
+    .navbar-toggler-icon {
+      background-color: black;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 134.28%; /* Aspect ratio calculated from 350px (width) / 470px (height) */
+      height: 0;
+      max-width: 350px; /* Set the max width */
+      max-height: 470px; /* Set the max height */
+      margin: auto; /* Center the container */
+      overflow: hidden;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    </style>
 </head>
 <body>
 
 <!-- Navbar -->
 
-    <header>
-      <nav data-content-field="navigation navbar navbar-expand-lg">
-        <center>
-          <ul class="nav_links">
-            <li class="nav-items"><a href="music.html">MUSIC</a></li>
-            <li class="nav-items"><a href="videos.html">VIDEOS</a></li>
-            <li class="nav-items"><a href="photos.html">PHOTOS</a></li>
-            <a href="index.html"><img src="assets/images/The Rope - Nightbird Cover Art Hands.png" alt="logo 1" class="logo"/></a>
-            <li class="nav-items"><a href="https://therope1.bandcamp.com/merch" target="_blank">MERCH</a></li>
-            <li class="nav-items"><a href="events.html">EVENTS</a></li>
-            <li class="nav-items"><a href="mailto: latecenturyrecords@gmail.com">CONTACT</a></li>
-          </ul>
-        </center>
-      </nav>
-    </header>
-
-    <div class="container">
-        <ul class="icons-list">
-          <li class="icons"><a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <li class="icons"><a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li class="icons"><a href="https://twitter.com/theropeofficial" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-          <li class="icons"><a href="https://therope1.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
-          <li class="icons"><a href="https://open.spotify.com/artist/4QV2j0EAbYJ2KcAFKaItuU" target="_blank"><i class="fab fa-spotify"></i></a></li>
-          <li class="icons"><a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+        <img src="assets/images/The Rope - Nightbird Cover Art Hands.png" alt="logo 1">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="background-color: red;"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="music.html">MUSIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html">PHOTOS</a>
+          </li>
+        </ul>
+        <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+          <img src="assets/images/The Rope - Nightbird Cover Art Hands.png" alt="logo 1">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://therope1.bandcamp.com/merch" target="_blank">MERCH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:latecenturyrecords@gmail.com">CONTACT</a>
+          </li>
         </ul>
       </div>
+    </div>
+  </nav>
 
 
-<div class="section">
-    <img src="assets/images/The Rope - Collage 4 v7.png" alt="The Rope collage" id="collage">
+<div class="">
+    <div class="">
+        <img src="assets/images/The Rope - Collage 4 v7.png" alt="The Rope collage" id="collage" class="img-fluid">
+    </div>
+</div>
+
+<div class="container" style="margin-top: 10px; margin-bottom: 10px;">
+    <div class="row">
+        <div class="col-3 icon-container"><a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-facebook"></i></a></div>
+        <div class="col-3 icon-container"><a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        <!-- <div class="col-2 icon-container"><a href="https://therope1.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a></div> -->
+        <div class="col-3 icon-container"><a href="https://twitter.com/theropeofficial" target="_blank"><i class="fab fa-twitter"></i></a></div>
+        <!-- <div class="col-2 icon-container"><a href="https://open.spotify.com/artist/4QV2j0EAbYJ2KcAFKaItuU" target="_blank"><i class="fab fa-spotify"></i></a></div> -->
+        <div class="col-3 icon-container"><a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square"></i></a></div>
+    </div>
 </div>
 
 <div class="section card-container">
     <div class="row music-card">
-        <div class="col-md-6 img-fluid">
-            <img src="assets/images/covers/The Rope - Nightbird Cover Art.png" alt="Nightbird cover" class="header-info-nightbird" id="nightbird-hands">
+        <div class="col-md-6">
+            <!-- <div class="iframe-container">
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1811796388/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/transparent=true/" seamless>
+                  <a href="https://therope1.bandcamp.com/album/waters-rising">Waters Rising by The Rope</a>
+                </iframe>
+              </div> -->
+            <!-- <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1811796388/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/transparent=true/" seamless><a href="https://therope1.bandcamp.com/album/waters-rising">Waters Rising by The Rope</a></iframe> -->
+            <img src="assets/images/covers/The Rope - Nightbird Cover Art.png" alt="Nightbird cover" class=" img-fluid" id="">
         </div>
-        <div class="col-md-6 music-button" >
-            <img src="assets/images/The Rope - Nightbird Typography Transparent.png" alt="Nightbird" class="header-info-nightbird" id="nightbird-text">
+        <div class="col-md-6" >
+            <img src="assets/images/The Rope - Nightbird Typography Transparent.png" alt="Nightbird" class="img-fluid">
             <h1>OUT NOW</h1>
-            <button class="btn streaming-button mb-2 w-50">SPOTIFY</button>
+            <!-- <button class="btn streaming-button mb-2 w-50">SPOTIFY</button>
             <button class="btn streaming-button mb-2 w-50">APPLE MUSIC</button>
             <button class="btn streaming-button mb-2 w-50">BANDCAMP</button>
-            <button class="btn streaming-button mb-2 w-50">YOUTUBE</button>
+            <button class="btn streaming-button mb-2 w-50">YOUTUBE</button> -->
+            <div class="row" style="margin: auto; margin-top: 20px;">
+                <div class="col-3 icon-container"><a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-spotify" style="color: white;"></i></a></div>
+                <div class="col-3 icon-container"><a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-apple" style="color: white;"></i></a></div>
+                <div class="col-3 icon-container"><a href="https://soundcloud.com/late-century-records" target="_blank"><i class="fab fa-soundcloud" style="color: white;"></i></a></div>
+                <div class="col-3 icon-container"><a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square" style="color: white;"></i></a></div>
+            </div>
         </div>
+
     </div>
 </div>
 
@@ -126,8 +200,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
