@@ -1,0 +1,89 @@
+/*
+
+
+STREAMING ICONS
+
+
+*/
+
+@media (min-width: 1200px) {
+    .icon-container i {
+        font-size: 3em; /* Large screens */
+    }
+    .music-card {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .icon-container i .streaming-icon {
+        font-size: 2.5em; /* Medium screens */
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .icon-container i .streaming-icon {
+        font-size: 2em; /* Small screens */
+    }
+
+}
+
+@media (max-width: 767px) {
+    .icon-container i {
+        font-size: 1.5em; /* Extra small screens */
+    }
+}
+
+.streaming-icon {
+    color: white;
+}
+
+.streaming-icon:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.streaming-icon:not(:hover) {
+    color: white;
+    transition: 1s;
+}
+
+i:hover {
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px var(--clr-white);
+}
+/* *** */
+
+/*
+
+
+
+SOCIAL MEDIA ICONS
+
+
+
+*/
+
+.socials-icon {
+    color: red;
+}
+
+.socials-icon:hover {
+    color: white;
+    transition: 1s;
+}
+
+.socials-icon:not(:hover) {
+    color: red;
+    transition: 1s;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* *** */

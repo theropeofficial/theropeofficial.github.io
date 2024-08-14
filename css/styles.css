@@ -1,34 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     background-color: black;
-/*    background-image: url('/assets/photos/The Rope - White Background.jpg');*/
     background-attachment: fixed;
-/*    max-width: 100%;*/
     overflow-x: hidden;
     object-fit: contain;
     scrollbar-color: red;
     max-width: 100vw;
+    background-image: url('/assets/images/red lace 2.jpg');
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: black;
-  outline: 5px solid red;
+p {
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 @media (min-width:  800px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
+    --fs-h3: 2.5rem;
     --fs-body:  1.125rem;
 
     --ff-impact: 'Impact', sans-serif;
+    --fm-h1: 2rem;
   }
 }
 
 @media (max-width: 800px) {
     :root {
+        --fs-h1: 3.5rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 1.5rem;
         --ff-impact: 'Impact', sans-serif;
+
+        --fm-h1: 1rem;
     }
 }
 
@@ -45,6 +50,10 @@ h2 {
     font-size: var(--fs-h2);
 }
 
+h3 {
+    font-size: var(--fs-h3);
+}
+
 h5 {
     font-family: var(--ff-impact);
 }
@@ -55,47 +64,15 @@ h5 {
 NAVBAR
 
 */
-
-/*
-
-NAV BAR
-
-*/
-
 nav {
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  vertical-align: middle;
-      opacity: 80%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    vertical-align: middle;
+    opacity: 80%;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
-}
-
-.nav-items {
-  display: inline-block;
-  padding: 1em 2em;
-  text-align: center;
-  position: relative;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-h3);
-  opacity: 0.5;
-}
-
-.nav-items:hover {
-  opacity: 1;
-  transition: 1s;
-}
-
-.nav-items:not(:hover) {
-  transition: 1s;
-}
-
-.logo {
-  width: 10%;
-  height: 10%;
-  vertical-align: middle;
 }
 
 .navbar {
@@ -109,119 +86,40 @@ nav {
     z-index: 1030; /* Adjust as needed to be above other elements */
 }
 
-
-#navbar-brand {
-/*    width: 10%;
-    height: 10%;*/
+.navbar-nav .nav-link {
+    color: red !important;
+    font-size: 2em;
+    margin: 1rem 2rem;
 }
 
-/* css/styles.css */
-#navbar-brand {
-    height: 50px; /* Adjust as needed */
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    font-size: 2em;
+    margin: 1rem 2rem;
+    transition: 1s;
 }
 
-/*
-
-SOCIAL MEDIA ICONS
-
-*/
-
-.icons-list {
-/*  width: 100%;
-  height: 100%;*/
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  max-width: 100%;
+.navbar-nav .nav-link:not(:hover) {
+    color: red;
+    transition: 1s;
 }
 
-.icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar-brand img {
+    height: 100px; /* Adjust based on your requirements */
+    max-width: 100%;
+    width: auto;
 }
 
-i {
-  /* font-size: 3rem;
-  /* margin: 0em 1em; */
-  /* margin: 10px 10px 10px 0px;
-  opacity: 0.75;
-  border-spacing: 5px;
-  border-radius: 50%; */
+.navbar-toggler {
+    border-color: transparent;
 }
 
-i:hover {
-  opacity: 1;
-  transition: 0.5s;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px var(--clr-white);
-}
-
-i:not(:hover) {
-  transition: 0.5s;
-}
-
-
-
-@media (min-width: 1200px) {
-    .icon-container i {
-        font-size: 3em; /* Large screens */
-    }
-    .music-card {
-        width: 60%;
-        height: 60%;
-    }
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-    .icon-container i {
-        font-size: 2.5em; /* Medium screens */
-    }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-    .icon-container i {
-        font-size: 2em; /* Small screens */
-    }
-
-}
-
-@media (max-width: 767px) {
-    .icon-container i {
-        font-size: 1.5em; /* Extra small screens */
-    }
-}
-/* *** */
-
-.music-button {
-    justify-content: center;
-    margin: auto;
-}
-
-.cover-art {
-    height: auto;
-    width: 50%;
-box-shadow: 0px 0px 10px #fff;
-}
-
-.iframe-container {
-    background-color: #1a1a1a;
-    padding: 1em;
-    border-color: red;
-    -moz-box-shadow: 0 0 15px red;
-    -webkit-box-shadow: 0 0 15px red;
-    box-shadow: 0px 0px 15px red;
-    border-radius: 2px;
+.navbar-toggler-icon {
+background-color: black;
 }
 
 #header-container {
-/*    position: relative;*/
-/*    background-position: center;*/
     height: 100vh;
-/*    display: flex;
-    align-items: flex-end;
-    justify-content: center;*/
-/*    object-fit: contain;*/
     background-image: url('The Rope - Collage 4 v6 (4).png');
 }
 
@@ -232,69 +130,19 @@ box-shadow: 0px 0px 10px #fff;
     width: 60%;
     height: 60%;
     justify-content: center;
-      display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#nightbird-hands {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-}
-
-
-#nightbird-text {
-    max-height: 50%;
-    max-width: 50%;
-}
-
-.music-card {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    text-align: center;
-    margin: 2em;
-    -moz-box-shadow: 0 0 25px red;
-    -webkit-box-shadow: 0 0 25px red;
-    box-shadow: 0px 0px 25px red;
-    opacity: 80%;
-}
-
-.music-card:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    opacity: 100%;
-    transition: 1s;
-}
-
-.music-card:not(:hover) {
-    transition: 1s;
-}
-
-.card-container {
-    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*        .vertical-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }*/
 
 footer {
-    background-color: #1a1a1a;
+    background-color: black;
 }
 
 li, a {
   text-decoration: none;
   list-style: none;
-}
-
-a:hover {
-    color: red;
 }
 
 button {
@@ -306,36 +154,6 @@ button {
     max-width: 100%;
     height: auto;
 }
-.music-button {
-    text-align: center;
-}
-
-
-.streaming-button {
-/*    -moz-box-shadow: 0 0 15px red;
--webkit-box-shadow: 0 0 15px red;
-box-shadow: 0px 0px 15px red;*/
-    color: white;
-    background-color: black;
-    margin-top: 15px;
-/*    border: solid red 5px;
-    border-radius: 0px;*/
-    transition: 0.25s;
-}
-
-.streaming-button:hover {
-    border-radius: 0px;
-    color: white;
-    transition: 0.25s;
-    -moz-box-shadow: 0 0 15px red;
--webkit-box-shadow: 0 0 15px red;
-box-shadow: 0px 0px 15px red;
-}
-
-.streaming-service {
-    font-family: var(--ff-impact);
-}
-
 
 /* 
 
@@ -343,9 +161,6 @@ SCROLL
 BAR 
 
 * /
-
-
-
 /* Webkit Browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 16px; /* Width of the scrollbar */
@@ -371,111 +186,11 @@ BAR
     scrollbar-color: red black; /* thumb color and track color */
 }
 
-td {
-  font-size: var(--fs-h3);
-  font-family: var(--ff-secondary);
-  padding: 15px;
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 5px solid red;
+  }
 
-}
+  .photos-container {
 
-tr {
-  opacity: 0.5;
-  margin-left: 500px;
-  background-color: white;
-  color: black;
-  font-family: var(--ff-secondary);
-  border-top: 1px solid black;
-}
-
-tr:hover {
-  transition: 1s;
-  opacity: 1.5;
-}
-
-tr:not(:hover) {
-  transition: 1s;
-}
-
-/*
-
-IFRAME MEDIA LINKS
-
-*/
-
-.responsive-iframe-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
-
-.responsive-iframe-container.iframe-4-3 {
-    padding-top: 75%; /* 4:3 Aspect Ratio */
-}
-
-.responsive-iframe-container.iframe-1-1 {
-    padding-top: 100%; /* 1:1 Aspect Ratio */
-}
-
-.responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-iframe {
-        -moz-box-shadow: 0 0 25px black;
-    -webkit-box-shadow: 0 0 25px black;
-    box-shadow: 0px 0px 25px black;
-}
-
-/*
-
-EVENTS TABLE
-
-*/
-
-
-
-#events-table {
-    justify-content: center;
-}
-
-.centered-table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.events-table-data {
-    font-family: var(--ff-impact);
-    border-right: 5px solid red;
-}
-
-.events-table-data:first-child {
-    border-left: none;
-}
-
-.events-table-data:last-child {
-    border-right: none;
-    border-left: 5px solid red;
-}
-
-#events-logo {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.events-table-row {
-    border-bottom: 5px solid red;
-}
-
-.events-table-row:last-child {
-    border-bottom: none;
-}
-
+  }
