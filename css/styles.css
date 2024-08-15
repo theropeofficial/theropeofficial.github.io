@@ -6,8 +6,8 @@ body {
     object-fit: contain;
     scrollbar-color: red;
     max-width: 100vw;
-    /* background-image: url('assets/images/red lace 2.jpg');
-    background-image: url('/assets/images/red lace 2.jpg'); */
+    background-image: url('assets/images/red lace 2.jpg');
+    background-image: url('/assets/images/red lace 2.jpg');
 }
 
 p {
