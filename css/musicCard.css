@@ -1,15 +1,9 @@
 .music-card {
-    /* background-color: rgba(255, 255, 255, 0.2); */
-    /* background-image: url('/assets/images/red lace 2.jpg'); */
-    /* padding: 20px; */
     text-align: center;
-    /* margin: 2em; */
-    /* border: solid red 5px; */
     background-color: black;
     -moz-box-shadow: 0 0 25px red;
     -webkit-box-shadow: 0 0 25px red;
     box-shadow: 0px 0px 25px red;
-    /* opacity: 80%; */
 }
 
 .music-container, .photos-container, .nightbird-container {
@@ -36,29 +30,16 @@
     border: 1px solid white;
 }
 
-.music-card:hover {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* opacity: 100%;
-    transition: 1s; */
-}
-
-.music-card:not(:hover) {
-    transition: 1s;
-}
-
 .card-container {
     justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem;
+    margin: 1rem; */
 }
 
-.bandcamp-player {
-    margin: auto;
-}
-
+/* 
 @media (max-width: 768px) {
     .music-card {
         display: flex;
@@ -66,23 +47,10 @@
     }
 
     .music-card > .col-md-6 {
-        order: 2; /* Headers and icons below the iframe */
+        order: 2; 
         width: 100%;
     }
 
     .music-card > .col-md-6:first-child {
-        order: 1; /* Iframe comes first */
-    }
-}
-
-
-
-/* .music-button {
-    justify-content: center;
-    margin: auto;
-} */
-
-/* #nightbird-text {
-    max-height: 50%;
-    max-width: 50%;
-} */
+        order: 1;
+    } */
