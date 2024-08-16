@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/eventsTable.css">
 </head>
-<body style="background-image: url('assets/images/red lace 2.jpg');">
+<body style="background-image: url('assets/images/red lace 2.jpg'); overflow-x: hidden;">
 
 
 <!-- Navbar -->
@@ -63,11 +63,12 @@
 </nav>
 
 <!-- SOCIALS ICONS -->
-<div class="row" style="padding: 20px;">
-    <div class="col-3 icon-container"><a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-facebook socials-icon"></i></a></div>
-    <div class="col-3 icon-container"><a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-instagram socials-icon"></i></a></div>
-    <div class="col-3 icon-container"><a href="https://twitter.com/theropeofficial" target="_blank"><i class="fab fa-twitter socials-icon"></i></a></div>
-    <div class="col-3 icon-container"><a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square socials-icon"></i></a></div>
+<div class="row justify-content-center" style="padding: 20px;">
+  <div class="col-2 icon-container"><a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-facebook socials-icon"></i></a></div>
+  <div class="col-2 icon-container"><a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-instagram socials-icon"></i></a></div>
+  <div class="col-2 icon-container"><a href="https://therope1.bandcamp.com/track/nightbird-3" target="_blank"><i class="fab fa-bandcamp socials-icon"></i></a></div>
+  <div class="col-2 icon-container"><a href="https://twitter.com/theropeofficial" target="_blank"><i class="fab fa-twitter socials-icon"></i></a></div>
+  <div class="col-2 icon-container"><a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square socials-icon"></i></a></div>
 </div>
 
 <div class="row text" style="text-align: center;">
@@ -76,33 +77,12 @@
 
 <div class="container">
     <div class="row">
-        <img src="assets/images/Record Release Show Flyer.png" alt="nightbird release show flyer" class="img-fluid">
+        <img src="assets/images/Record Release Show Flyer.png" alt="nightbird release show flyer" class="img-fluid my-4" id="release-flyer">
     </div>
 </div>
 
-
-<!-- <div class="table-responsive-md">
-    <table class="table">
-        <tbody>
-            <tr>
-                <th scope="row">SEP 13 2024</th>
-                <td scope="col" class="events-table-data">
-                    Uptown VFW @ 8:00PM
-                    <span style="font-size: 12px;"></br>with Stranger Gallery</span>
-                </td>
-                <td scope="col" class="events-table-data">Minneapolis, MN</td>
-                <td scope="col">
-                    <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
-                        <span class="tickets-button">TICKETS</span>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div> -->
-
-<div class="container">
+<!-- event table -->
+<div class="container" style="overflow-x: auto;">
     <div class="row">
         <table class="text-center" id="events-table">
             <tr class="events-table-row">
@@ -116,7 +96,9 @@
                     <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
                         <span class="tickets-button">TICKETS</span>
                     </a>
-                    <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
+                </td>
+                <td scope="col">
+                  <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
                 </td>
             </tr>
             <tr class="events-table-row">
@@ -126,10 +108,14 @@
                     <span style="font-size: 12px;"></br>Nightbird Release Show</span>
                 </td>
                 <td class="events-table-data">Minneapolis, MN</td>
-                <td>
-                    <span class="tickets-button">TICKETS</span>
-                    <span class="tickets-button">RSVP</span>
-                </td>
+                <td scope="col">
+                  <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
+                      <span class="tickets-button">TICKETS</span>
+                  </a>
+              </td>
+              <td scope="col">
+                <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
+              </td>
             </tr>
             <tr class="events-table-row">
                 <td class="events-table-data">11.01.24</td>
@@ -138,31 +124,62 @@
                     <span style="font-size: 12px;"></br>with Traffic</span>
                 </td>
                 <td class="events-table-data">Minneapolis, MN</td>
-                <td>
-                    <span class="tickets-button">TICKETS</span>
-                    <span class="tickets-button">RSVP</span>
-                </td>
+                <td scope="col">
+                  <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
+                      <span class="tickets-button">TICKETS</span>
+                  </a>
+              </td>
+              <td scope="col">
+                <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
+              </td>
             </tr>
+            <tr class="events-table-row">
+              <td class="events-table-data">12.01.24</td>
+              <td class="events-table-data">
+                  The Mercury Lounge @ 7:00PM
+                  <span style="font-size: 12px;"></br>Red Party</span>
+              </td>
+              <td class="events-table-data">New York, NY</td>
+              <td scope="col">
+                <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
+                    <span class="tickets-button">TICKETS</span>
+                </a>
+            </td>
+            <td scope="col">
+              <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
+            </td>
+          </tr>
+          <tr class="events-table-row">
+            <td class="events-table-data">11.01.25</td>
+            <td class="events-table-data">
+                The Face Bar @ 7:00PM
+                <span style="font-size: 12px;"></br>Sacrosant Festival</span>
+            </td>
+            <td class="events-table-data">Dublin, Ireland</td>
+            <td scope="col">
+              <a target="_blank" href="https://www.eventbrite.com/e/stranger-gallery-record-release-wthe-rope-sweatboys-speakeazie-jake-rudh-tickets-884518477577?aff=oddtdtcreator&fbclid=IwY2xjawEpOIZleHRuA2FlbQIxMAABHa6-UYaZGdTfJ1FqMxUoq0W_Y5HYfnRHo0uX-loKKKbOd88rbueaF4fGJA_aem_2SDWj9nrGjRXYXsRUBU28g">
+                  <span class="tickets-button">TICKETS</span>
+              </a>
+          </td>
+          <td scope="col">
+            <a target="_blank" href="https://www.facebook.com/events/434000669119654"><span class="tickets-button">RSVP</span></a>
+          </td>
+        </tr>
         </table>
     </div>
 </div>
-<!-- 
-
-<div id="events-logo">
-    <img src="assets/images/The Rope Logo_White.png" alt="" style="width: 50vw;">
-</div> -->
 
 <!-- Footer -->
 <footer class="text-white text-center py-3">
-    <div class="container">
-      <p>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-youtube-square"></i>
-      </p>
-        <p>&copy; 2024 The Rope LLC. All rights reserved.</p>
-    </div>
+  <div class="container">
+    <p>
+      <a href="https://www.facebook.com/TheRope1/" target="_blank"><i class="fab fa-facebook" style="color: white;"></i></a>
+      <a href="https://www.instagram.com/the_rope_official/?hl=en" target="_blank"><i class="fab fa-instagram" style="color: white;"></i></a>
+      <a href="https://twitter.com/theropeofficial" target="_blank"><i class="fab fa-twitter" style="color: white;"></i></a>
+      <a href="https://www.youtube.com/channel/UCVJZ7-GeitNc9Ah0IMgLIFA" target="_blank"><i class="fab fa-youtube-square" style="color: white;"></i></a>
+    </p>
+      <p>&copy; 2024 The Rope LLC. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
