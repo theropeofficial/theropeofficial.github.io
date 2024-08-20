@@ -38,19 +38,3 @@
     /* padding: 1rem;
     margin: 1rem; */
 }
-
-/* 
-@media (max-width: 768px) {
-    .music-card {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .music-card > .col-md-6 {
-        order: 2; 
-        width: 100%;
-    }
-
-    .music-card > .col-md-6:first-child {
-        order: 1;
-    } */
