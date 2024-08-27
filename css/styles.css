@@ -85,7 +85,7 @@ nav {
     top: 0;
     z-index: 1000;
     vertical-align: middle;
-    opacity: 80%;
+    /* opacity: 80%; */
     position: -webkit-sticky; /* For Safari */
     position: sticky;
 }
@@ -94,7 +94,7 @@ nav {
     background-color: #1a1a1a;
 /*    position: relative;*/
     overflow: hidden;
-    opacity: 80%;
+    /* opacity: 80%; */
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
